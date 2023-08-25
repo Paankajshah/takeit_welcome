@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+    color: #fff;
+  }
+
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    animation: bounce 2s infinite;
+  }
+
+  .logo span {
+    color: #e74c3c;
+  }
+
+  .message {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 2s forwards;
+  }
+
+  .icon {
+    font-size: 3rem;
+    margin-top: 20px;
+    animation: rotate 4s linear infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+<title>Coming Soon</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo"><span>t</span>ake<span>I</span>t</div>
+    <div class="message">We're working on something awesome! Stay tuned.</div>
+    <div class="icon">&#9733;</div>
+  </div>
+</body>
+</html>
